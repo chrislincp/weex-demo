@@ -2,5 +2,6 @@ node_modules
 package-lock.json
 platforms/ios/Pods
 platforms/ios/build
+platforms/ios/bundlejs
 dist
 .temp
