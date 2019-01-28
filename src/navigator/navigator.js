@@ -1,4 +1,5 @@
 let nav = weex.requireModule('navigator')
+const base = 'http://192.168.15.193:8081/dist/'
 
 class Navigator {
   push (option, cb) {
@@ -7,9 +8,12 @@ class Navigator {
       animated: 'true'
     }
     if (typeof option === 'string') {
-      opt.url = option
+      opt.url = base + option.replace(/.vue/g, '.js')
     } else {
-      opt = option
+      opt = {
+        url: base + option.url.replace(/.vue/g, '.js'),
+        animated: option.animated || 'true'
+      }
     }
     nav.push(opt, cb)
   }
