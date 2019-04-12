@@ -11,6 +11,7 @@
 #import <WeexSDK/WeexSDK.h>
 #import <AVFoundation/AVFoundation.h>
 #import "WeexSDKManager.h"
+// #import <TBWXDevTool/WXDevTool.h>
 
 @interface AppDelegate ()
 @end
@@ -22,6 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // [WXDevTool launchDevToolDebugWithUrl:@"ws://192.168.15.161:8088/debugProxy/native"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     

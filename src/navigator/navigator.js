@@ -1,5 +1,5 @@
 let nav = weex.requireModule('navigator')
-const base = 'http://192.168.15.193:8081/dist/'
+const base = 'http://192.168.15.161:8081/dist/'
 
 class Navigator {
   push (option, cb) {
@@ -15,6 +15,7 @@ class Navigator {
         animated: option.animated || 'true'
       }
     }
+    console.log(option, cb, opt)
     nav.push(opt, cb)
   }
 

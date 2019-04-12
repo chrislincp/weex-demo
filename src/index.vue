@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     jump () {
-      navigator.push('http://192.168.15.152:8081/dist/views/test.js')
+      navigator.push('views/test.vue')
     }
   }
 }
